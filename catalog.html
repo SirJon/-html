@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+	<meta charset="utf-8">
+	<title>Device</title>
+  </head>
+  <body>
+    <header class="catalog-header">
+       <nav class="catalog-navigation">
+         <a class="catalog-navigation-logo">
+           <img src="img.jpg" alt="Логотип магазина для Фотосъёмки">
+         </a>
+
+         <form  class="catalog-navigation-search">
+           <input type="search" name="Поиск" id="catalog-search" class="catalog-search" placeholder="Поиск по сайту...">
+           <label class="visually-hidden" for="catalog-search">Поиск</label>
+           <button class="button button-search" type="submit">
+             Поиск
+           </button>
+         </form>
+
+         <ul class="catalog-navigation-user">
+           <li><a href="login.html">Войти</a></li>
+           <li><a href="compare.html">Сравнить</a></li>
+           <li><a href="shoppingbasket.html">Корзина</a></li>
+         </ul>
+
+         <ul class="catalog-navigation-site">
+           <li><a href="oll-tovar.html">Каталог товаров</a></li>
+           <li><a href="delivery.html">Доставка</a></li>
+           <li><a href="crash.html">Гарантия</a></li>
+           <li><a href="contacts.html">Контакты</a></li>
+         </ul>
+       </nav>
+	   </header>
+
+    <main class="container">
+      <h1 class="advantages-hidden">Моноподы для селфи</h1>
+      <form  class="filtare" method="post">
+        <h2>ФИЛЬТР:</h2>
+        <label>
+            <input type="range" name="filtare-cost">Стоимость
+          </label>
+        <fieldset class="filtare-nav">
+          <legend>
+            Цвет
+          </legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="black" id="filtare-black">
+              <label for="filtare-black">
+                Чёрный
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="white" id="filtare-white">
+              <label for="filtare-white">
+                Белый
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="blue" id="filtare-blue">
+              <label for="filtare-blue">
+                Синий
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="red" id="filtare-red">
+              <label for="filtare-red">
+                Красный
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="pink" id="filtare-pink">
+              <label for="filtare-pink">
+                Розовый
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filtare-nav">
+          <legend>Bluetooth</legend>
+          <ul>
+            <li>
+              <input type="radio" name="bluetooth" id="filtare-yes" checked>
+              <label for="filtare-yes">
+                Есть
+              </label>
+            </li>
+            <li>
+              <input type="radio" name="bluetooth" id="filtare-no">
+              <label for="filtare-no">
+                Нет
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+      <section class="monopod">
+        <h2 class="monopod-h2">
+          СОРТИРОВКА:
+        </h2>
+        <ul class="monopod-nav">
+          <li><a href="monopod.html">По цене</a></li>
+          <li><a href="monopod.html">По типу</a></li>
+          <li><a href="monopod.html">По популярности</a></li>
+        </ul>
+        <ul class="monopod-nav">
+          <li><a href="monopod.html">Стрелочка вверх</a></li>
+          <li><a href="monopod.html">Стрелочка вниз</a></li>
+        </ul>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">
+          Каталог товаров
+        </h2>
+        <ul>
+          <li>
+            <img src="selfi.jpg" alt="Селфи палка">
+            <b class="catalog-text">Любительская селфи-палка</b>
+            <b class="catalog-cost">500₽</b>
+          </li>
+          <li>
+            <img src="selfipro.jpg" alt="Селфи палка pro">
+            <b class="catalog-text">Профессиональная селфи-палка</b>
+            <b class="catalog-cost">1500₽</b>
+          </li>
+          <li>
+            <img src="selfiwater.jpg" alt="Селфи палка непотопляемая">
+            <b class="catalog-text">Непотопляемая селфи-палка</b>
+            <b class="catalog-cost">2500₽</b>
+          </li>
+          <li>
+            <img src="selfihand.jpg" alt="Селфи палка рука">
+            <b class="catalog-text">Селфи-палка "Следуй за мной"</b>
+            <b class="catalog-cost">4900₽</b>
+          </li>
+        </ul>
+      </section>
+      <nav class="catalog-page-nav">
+        <ul>
+          <button class="catalog-page-nav-button" aria-label="Перелестнуть ленту с товарами назад">
+            Назад
+          </button>
+          <button class="catalog-page-nav-button" aria-label="Первая страница ленты с товарами">
+            1
+          </button>
+          <button class="catalog-page-nav-button" aria-label="Вторая страница ленты с товарами">
+            2
+          </button>
+          <button class="catalog-page-nav-button" aria-label="Третья страница ленты с товарами">
+            3
+          </button>
+          <button class="catalog-page-nav-button" aria-label="Перелестнуть ленту с товарами вперед">
+            Вперёд
+          </button>
+        </ul>
+      </nav>
+    </main>
+  </body>
+  <footer class="monopid-footer">
+    <div class="footer-contacts">
+      <p class="footer-contacts-text">
+        <a class="footer-main-logo">
+          <img src="footerlogo.jpg" widtd="368" height="153" alt="Логотип магазина для Фотосъёмки">
+        </a>
+        <b class="footer-text">г. Москва, ул. Строителей, 15</b>
+        <a class="footer-another-logo">
+          <img src="img.jpg" widtd="368" height="153" alt="Нижнее подчеркивание">
+        </a>
+      </p>
+    </div>
+
+    <nav class="footer-navigation">
+        <ul class="footer-navigation-delivery">
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="warranty.html">Гарантия</a></li>
+          <li><a href="warranty.html">Кредит</a></li>
+        </ul>
+        <ul class="footer-navigation-social">
+          <li><a class="social-button" href="https://www.facebook.com/">FaceBook</a></li>
+          <li><a class="social-button" href="https://www.instagram.com/">Instagram</a></li>
+          <li><a class="social-button" href="https://twitter.com/">Twitter</a></li>
+        </ul>
+        <ul class="footer-navigation-user">
+          <li><a href="login.html">Войти</a></li>
+          <li><a href="compare.html">Сравнить</a></li>
+          <li><a href="shoppingbasket.html">Корзина</a></li>
+        </ul>
+    </nav>
+    <a class="footer-contacts">Тел.: +7 (495) 495-95-95</a><br>
+    <img src="C:\Users\Евгений\Desktop\html css\Проект2\svg\logo-html.svg" alt="Логотип">
+  </footer>
+
+  <section class="login">
+    <h2>Личный кабинет</h2>
+    <p>Введите свой логин и пароль</p>
+    <form class="login-form">
+      <p>
+        <label class="visually-hidden" for="user-login">Логин</label>
+        <input class="login-form-user" id="user-login" type="text" name="login" placeholder="Логин">
+      </p>
+      <p>
+        <label class="visually-hidden" for="user-password">Пароль</label>
+        <input class="login-form-user" id="user-password" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p class="login-form-restore">
+        <input class="visually-hidden" id="login-form-info" type="checkbox" name="checkbox">
+        <label for="login-form-info">Запомните меня</label>
+      </p>
+      <a href="#" class="restore">Я забыл пароль</a>
+      <button class="button" type="submit">Войти</button>
+    </form>
+    <button class="popup-close" type="button">Закрыть</button>
+  </section>
+</html>
