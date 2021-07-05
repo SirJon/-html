@@ -14,8 +14,17 @@ a {
   text-decoration: none;
 }
 
-.main-navigation-search {
-  font-family:
+.main-navigation {
+  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.main-navigation-user {
+  font-family: "OpenSans-Light", Arial, sans-serif;
   font-size: 15px;
   line-height: 24px;
   color: #000000;
