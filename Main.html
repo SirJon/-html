@@ -3,29 +3,31 @@
   <head>
 	   <meta charset="utf-8">
 	   <title>Device</title>
-     <link href="fronts/gilroylight/stylesheet.css" rel="stylesheet">
+     <link href="fronts\gilroylight\stylesheet.css" rel="stylesheet">
      <link href="css\normalize.css" rel="stylesheet">
+     <link href="css\css.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
        <nav class="main-navigation">
         <form  class="main-navigation-search">
            <input type="search" name="Поиск" id="main-search" class="main-search" placeholder="Поиск по сайту...">
-           <label class="visually-hidden" for="main-search">Поиск</label>
-           <button class="button button-search" type="submit">
-             Поиск
-           </button>
+           <label class="visually-hidden" for="main-search">Найти</label>
+           <button class="button button-search" type="submit">Найти</button>
          </form>
 
          <ul class="main-navigation-user">
-           <li><a href="login.html">Войти</a></li>
-           <li><a href="compare.html">Сравнить</a></li>
-           <li><a href="shoppingbasket.html">Корзина</a></li>
+           <li><a href="login.html"><img src="svg\user.svg" alt="Иконка войти">Войти</a></li>
+           <li><a href="compare.html"><img src="svg\compare.svg" alt="Сравнить">Сравнить</a></li>
+           <li><a href="shoppingbasket.html"><img src="svg\cart.svg" alt="Иконка корзины">Корзина</a></li>
          </ul>
 
          <ul class="main-navigation-site">
-           <li class="main-logo">DEVICE</li>
-           <li><a href="catalog.html">Каталог товаров</a></li>
+           <li class="main-logo"><a href="#">DEVICE</a></li>
+           <li>
+             <a href="catalog.html">Каталог товаров</a>
+             <button class="catalog-open" type="button">Открыть каталог</button>
+           </li>
            <li><a href="delivery.html">Доставка</a></li>
            <li><a href="warranty.html">Гарантия</a></li>
            <li><a href="contacts.html">Контакты</a></li>
@@ -35,45 +37,45 @@
     <main class="container">
        <h1 class="visually-hidden">Магазин девайсов</h1>
        <article class="advantages">
-         <h2 class="advantages-hidden">Достоинства</h2>
+         <h2 class="visually-hidden">Достоинства</h2>
          <ul class="advantages-list">
            <li>
-             <b>Делай селфи, как Бен Стиллер!</b>
-             <p>
+             <b class="advantages-heading">Делай селфи, как Бен Стиллер!</b>
+             <p сlass="advantages-text">
                Самая длинная палка для селфи доступна в нашем магазине.<br>
                Восемь (Восемь, Карл!) метров длиной и весом 5 килограмм.
              </p>
-             <a class="button" href="#">Подробнее</a>
+             <a class="advantages-button" href="#">Подробнее</a>
              <table class="parametrs">
                <tbody>
-                 <tr class="parametrs parametrs-huge">
+                 <tr class="parametrs-huge">
                    <td>8,5 м</td>
                    <td>5 кг</td>
                    <td>Карбон</td>
                  </tr>
-                 <tr class="parametrs parametrs-low">
+                 <tr class="parametrs-low">
                    <td>Длина палки</td>
                    <td>Вес палки</td>
                    <td>Материал</td>
                  </tr>
                </tbody>
              </table>
-             <a href="#"><img src="img1.png" alt="Изображение палки"></a>
+             <a href="#"><img src="svg\selfi.png" alt="Изображение палки"></a>
            </li>
-           <li>
-             <b>Второй товар</b>
-             <p>
+<!--           <li>
+             <b class="advantages-heading">Второй товар</b>
+             <p сlass="advantages-text">
                Его описание
              </p>
              <a class="button" href="#">Подробнее</a>
              <table class="parametrs">
                <tbody>
-                 <tr class="parametrs parametrs-huge">
+                 <tr class="parametrs-huge">
                    <td>7 м</td>
                    <td>4 кг</td>
                    <td>Аллюминий</td>
                  </tr>
-                 <tr class="parametrs parametrs-low">
+                 <tr class="parametrs-low">
                    <td>Длина палки</td>
                    <td>Вес палки</td>
                    <td>Материал</td>
@@ -83,19 +85,19 @@
              <a href="#"><img src="img2.png" alt="Изображение второго товара"></a>
            </li>
            <li>
-             <b>Третий товар</b>
-             <p>
+             <b class="advantages-heading">Третий товар</b>
+             <p сlass="advantages-text">
                Его описание
              </p>
              <a class="button" href="#">Подробнее</a>
              <table class="parametrs">
                <tbody>
-                 <tr class="parametrs parametrs-huge">
+                 <tr class="parametrs-huge">
                    <td>6 м</td>
                    <td>3 кг</td>
                    <td>Аллюминий</td>
                  </tr>
-                 <tr class="parametrs parametrs-low">
+                 <tr class="parametrs-low">
                    <td>Длина палки</td>
                    <td>Вес палки</td>
                    <td>Материал</td>
@@ -103,7 +105,7 @@
                </tbody>
              </table>
              <a href="#"><img src="img3.png" alt="Изображение третьего товара"></a>
-           </li>
+           </li> -->
          </ul>
        </article>
 
@@ -118,31 +120,31 @@
                </li>
                <li class="main-catalog-item">
                    <a href="catalog.html">
-                     <img src="C:\Users\Евгений\Desktop\проект html\svg\popular-2.svg" alt="Селфи палка">
+                     <img src="svg\popular-2.svg" alt="Селфи палка">
                      <br>Моноподы для селфи
                    </a>
                </li>
                <li class="main-catalog-item">
                    <a href="catalog.html">
-                     <img src="popular-3.svg" alt="Камера">
+                     <img src="svg\popular-3.svg" alt="Камера">
                      <br>Экшн-камеры
                    </a>
                </li>
                <li class="main-catalog-item">
                    <a href="catalog.html">
-                     <img src="popular-4.svg" alt="Фитнес-браслет">
+                     <img src="svg\popular-4.svg" alt="Фитнес-браслет">
                      <br>Фитнес-браслеты
                    </a>
                </li>
                <li class="main-catalog-item">
                    <a href="catalog.html">
-                     <img src="popular-5.svg" alt="Watch">
+                     <img src="svg\popular-5.svg" alt="Watch">
                      <br>Умные часы
                    </a>
                </li>
                <li class="main-catalog-item">
                    <a href="catalog.html">
-                     <img src="popular-6.svg" alt="Коптер">
+                     <img src="svg\popular-6.svg" alt="Коптер">
                      <br>Квадрокоптеры
                    </a>
                </li>
@@ -163,15 +165,15 @@
            подъезду совершенно бесплатно! Ведь мы неплохо<br>
            заработаем, поднимая его на ваш этаж.
          </p>
-         <img src="delivery.svg" alt="Доставка">
+         <img src="svg\delivery.svg" alt="Доставка">
        </section>
        <section class="brand">
          <h2 class="brand-hidden">Бренды</h2>
          <ul>
-           <li><a href="catalog.html" class="brend"><img src="dji.jpg" alt="dji"></a></li>
-           <li><a href="catalog.html" class="brend"><img src="spgadgets.jpg" alt="spgadgets"></a> </li>
-           <li><a href="catalog.html" class="brend"><img src="gopro.jpg" alt="gopro"></a></li>
-           <li><a href="catalog.html" class="brend"><img src="vive.jpg" alt="vive"></a></li>
+           <li><a href="catalog.html" class="brend"><img src="svg\dji.png" alt="dji" width="100"></a></li>
+           <li><a href="catalog.html" class="brend"><img src="svg\spgadgets.png" alt="spgadgets" width="100"></a> </li>
+           <li><a href="catalog.html" class="brend"><img src="svg\gopro.png" alt="gopro" width="100"></a></li>
+           <li><a href="catalog.html" class="brend"><img src="svg\vive.png" alt="vive" width="100"></a></li>
          </ul>
        </section>
        <section class="contacts">
@@ -196,7 +198,7 @@
            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
            проверить работоспособность покупки. Всякое бывает.
          </p>
-         <img src="map.jpg" alt="Офис находится по адресу город Москва улица Строителей дом 15"><br>
+         <img src="svg\address.png" alt="Офис находится по адресу город Москва улица Строителей дом 15" width="150"><br>
          <a class="button" href="aboutme.html">Напишите нам</a>
        </section>
      </main>
@@ -205,11 +207,11 @@
     <div class="footer-contacts">
       <p class="footer-contacts-text">
         <a class="footer-main-logo">
-          <img src="footerlogo.jpg" alt="Логотип магазина для Фотосъёмки">
+          DEVICE
         </a><br>
         <b class="footer-text">г. Москва, ул. Строителей, 15</b><br>
         <a class="footer-another-logo">
-          <img src="img.jpg" alt="Нижнее подчеркивание">
+          <img src="" alt="Нижнее подчеркивание" >
         </a>
       </p>
     </div>

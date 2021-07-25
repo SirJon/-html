@@ -14,20 +14,75 @@ a {
   text-decoration: none;
 }
 
-.main-navigation {
+.main-navigation-search {
   font-family: "OpenSans-Light", Arial, sans-serif;
   font-size: 15px;
-  line-height: 24px;
-  color: #000000;
-
-  background-color: #ffffff;
+  line-height: 30px;
 }
 
 .main-navigation-user {
   font-family: "OpenSans-Light", Arial, sans-serif;
   font-size: 15px;
-  line-height: 24px;
-  color: #000000;
+  line-height: 30px;
+}
 
-  background-color: #ffffff;
+.main-logo {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.main-navigation-site {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main-navigation-user,
+.main-navigation-site{
+  list-style: none;
+}
+
+.main-navigation-user a,
+.main-navigation-site a{
+  color: #000000;
+}
+
+.main-navigation-user a:hover,
+.main-navigation-site a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.main-navigation-user a:focus,
+.main-navigation-site a:focus {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.main-navigation {
+  background-color:#f7e296;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-heading {
+  font-size: 47px;
+  line-height: 56px;
+}
+
+.advantages-text {
+  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.parametrs-huge {
+  font-family: "Gilroylight", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.parametrs-low {
+  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
 }
