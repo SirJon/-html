@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('gilroyextrabold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroylight';
+    src: url('gilroylight-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('opensans-light-webfont.woff2') format('woff2'));
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('opensans-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -46,6 +74,14 @@ a {
   color: #000000;
 }
 
+.main-navigation-user img:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.main-navigation-user img:focus {
+  color: rgba(0, 0, 0, 0.1);
+}
+
 .main-navigation-user a:hover,
 .main-navigation-site a:hover {
   color: rgba(0, 0, 0, 0.7);
@@ -85,4 +121,46 @@ a {
   font-family: "OpenSans-Light", Arial, sans-serif;
   font-size: 13px;
   line-height: 20px;
+}
+
+.main-catalog-list {
+  list-style: none;
+}
+
+.main-catalog-item img {
+  background-color:#f7e296;
+}
+
+.main-catalog-item img:hover,
+.main-catalog-item img:focus {
+  background-color: #f0c52e;
+}
+
+.main-catalog-item a{
+  color: #000000;
+}
+
+.main-catalog-item a:focus{
+  opacity: 0.3;
+  background-color: #f0c52e;
+}
+
+.delivery-hidden{
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.delivery-navigation b{
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #000000;
+  color: #f7e184;
+}
+
+.delivery-navigation-list{
+  list-style: none;
+}
+
+.delivery-navigation-list a{
+  color: #000000;
 }
