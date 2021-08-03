@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="ru">
   <head>
 	   <meta charset="utf-8">
 	   <title>Device</title>
-     <link href="fonts\gilroylight\Gilroyextrabold.woff2" rel="stylesheet">
-     <link href="fonts\gilroylight\Gilroylight.woff2" rel="stylesheet">
-     <link href="fonts\gilroylight\OpenSans-Light.woff2" rel="stylesheet">
-     <link href="fonts\gilroylight\OpenSans-Regular.woff2" rel="stylesheet">
+     <link href="fonts\Gilroyextrabold.woff2" rel="stylesheet">
+     <link href="fonts\Gilroylight.woff2" rel="stylesheet">
+     <link href="fonts\OpenSans-Light.woff2" rel="stylesheet">
+     <link href="fonts\OpenSans-Regular.woff2" rel="stylesheet">
      <link href="css\normalize.css" rel="stylesheet">
      <link href="css\css.css" rel="stylesheet">
   </head>
@@ -29,7 +29,9 @@
            <li class="main-logo"><a href="#">DEVICE</a></li>
            <li>
              <a href="catalog.html">Каталог товаров</a>
-             <button class="catalog-open" type="button">Открыть каталог</button>
+             <button class="button button-catalog-open" type="button" name="Открыть каталог">
+               <img src="svg\plus.svg" alt="Открыть каталог товаров">
+             </button>
            </li>
            <li><a href="delivery.html">Доставка</a></li>
            <li><a href="warranty.html">Гарантия</a></li>
@@ -48,7 +50,7 @@
                Самая длинная палка для селфи доступна в нашем магазине.<br>
                Восемь (Восемь, Карл!) метров длиной и весом 5 килограмм.
              </p>
-             <a class="advantages-button" href="#">Подробнее</a>
+             <a class="button advantages-button" href="#">Подробнее</a>
              <table class="parametrs">
                <tbody>
                  <tr class="parametrs-huge">
@@ -159,8 +161,8 @@
          <nav class="delivery-navigation">
            <b>Доставка</b>
            <ul class="delivery-navigation-list">
-             <li><a href="warranty.html">Гарантия</a></li>
-             <li><a href="warranty.html">Кредит</a></li>
+             <li><a class="button" href="warranty.html">Гарантия</a></li>
+             <li><a class="button" href="warranty.html">Кредит</a></li>
            </ul>
          </nav>
          <p class="delivery-text">
