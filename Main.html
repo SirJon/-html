@@ -3,30 +3,31 @@
   <head>
 	   <meta charset="utf-8">
 	   <title>Device</title>
-     <link href="fonts\Gilroyextrabold.woff2" rel="stylesheet">
-     <link href="fonts\Gilroylight.woff2" rel="stylesheet">
-     <link href="fonts\OpenSans-Light.woff2" rel="stylesheet">
-     <link href="fonts\OpenSans-Regular.woff2" rel="stylesheet">
+     <link href="fonts/Gilroyextrabold/gilroyextrabold-webfont.woff2" rel="stylesheet">
+     <link href="fonts/Gilroylight/gilroylight-webfont.woff2" rel="stylesheet">
+     <link href="fonts/OpenSans-Light/opensans-light-webfont.woff2" rel="stylesheet">
+     <link href="fonts/OpenSans-Regular/opensans-regular-webfont.woff2" rel="stylesheet">
      <link href="css\normalize.css" rel="stylesheet">
      <link href="css\css.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-       <nav class="main-navigation">
-        <form  class="main-navigation-search">
-           <input type="search" name="Поиск" id="main-search" class="main-search" placeholder="Поиск по сайту...">
-           <label class="visually-hidden" for="main-search">Найти</label>
-           <button class="button button-search" type="submit">Найти</button>
+       <nav class="navigation">
+        <form  class="navigation-search">
+          <img src="svg\search.svg" alt="Иконка найти">
+          <input type="search" name="Поиск" id="main-search" class="search" placeholder="Поиск по сайту...">
+          <label class="visually-hidden" for="main-search">Найти</label>
+          <button class="button button-search" type="submit">Найти</button>
          </form>
 
-         <ul class="main-navigation-user">
+         <ul class="navigation-user">
            <li><a href="login.html"><img src="svg\user.svg" alt="Иконка войти">Войти</a></li>
            <li><a href="compare.html"><img src="svg\compare.svg" alt="Сравнить">Сравнить</a></li>
            <li><a href="shoppingbasket.html"><img src="svg\cart.svg" alt="Иконка корзины">Корзина</a></li>
          </ul>
 
-         <ul class="main-navigation-site">
-           <li class="main-logo"><a href="#">DEVICE</a></li>
+         <ul class="navigation-site">
+           <li class="logo"><a class="button-DEVICE" href="#">DEVICE</a></li>
            <li>
              <a href="catalog.html">Каталог товаров</a>
              <button class="button button-catalog-open" type="button" name="Открыть каталог">
@@ -37,6 +38,14 @@
            <li><a href="warranty.html">Гарантия</a></li>
            <li><a href="contacts.html">Контакты</a></li>
          </ul>
+
+         <ul class="main-navigation-catalog">
+           <li><a href="catalog.html">Виртуальная реальность</a></li>
+           <li><a href="catalog.html">Моноподы для селфи</a></li>
+           <li><a href="catalog.html">Экшн-камеры</a></li>
+           <li><a href="catalog.html">Фитнес браслеты</a></li>
+           <li><a href="catalog.html">Умные часы</a></li>
+           <li><a href="catalog.html">Квадрокоптеры</a></li>
        </nav>
     </header>
     <main class="container">
@@ -173,10 +182,10 @@
          <img src="svg\delivery.svg" alt="Доставка">
        </section>
        <section class="brand">
-         <h2 class="brand-hidden">Бренды</h2>
-         <ul>
+         <h2 class="visually-hidden">Бренды</h2>
+         <ul class="brand-list">
            <li><a href="catalog.html" class="brend"><img src="svg\dji.png" alt="dji" width="100"></a></li>
-           <li><a href="catalog.html" class="brend"><img src="svg\spgadgets.png" alt="spgadgets" width="100"></a> </li>
+           <li><a href="catalog.html" class="brend"><img src="svg\spgadgets.png" alt="spgadgets" width="100"></a></li>
            <li><a href="catalog.html" class="brend"><img src="svg\gopro.png" alt="gopro" width="100"></a></li>
            <li><a href="catalog.html" class="brend"><img src="svg\vive.png" alt="vive" width="100"></a></li>
          </ul>
@@ -208,10 +217,10 @@
        </section>
      </main>
 	</body>
-  <footer class="main-footer">
+  <footer class="footer">
     <div class="footer-contacts">
       <p class="footer-contacts-text">
-        <a class="footer-main-logo">
+        <a class="main-logo footer-button-DEVICE"  href="#">
           DEVICE
         </a><br>
         <b class="footer-text">г. Москва, ул. Строителей, 15</b><br>
@@ -228,18 +237,32 @@
           <li><a href="credit.html">Кредит</a></li>
         </ul>
         <ul class="footer-navigation-social">
-          <li><a class="social-button" href="https://www.facebook.com/">FaceBook</a></li>
-          <li><a class="social-button" href="https://www.instagram.com/">Instagram</a></li>
-          <li><a class="social-button" href="https://twitter.com/">Twitter</a></li>
+          <li>
+            <a class="social-button" href="https://www.facebook.com/" aria-label="FaceBook">
+              <img src="svg\fb.svg" alt="Иконка FaceBook">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="https://vk.com/" aria-label="Vkontakte">
+              <img src="svg\vk.svg" alt="Иконка FaceBook">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="https://twitter.com/" aria-label="Twitter">
+              <img src="svg\twitter.svg" alt="Иконка FaceBook">
+            </a>
+          </li>
         </ul>
         <ul class="footer-navigation-user">
-          <li><a href="login.html">Войти</a></li>
-          <li><a href="compare.html">Сравнить</a></li>
-          <li><a href="shoppingbasket.html">Корзина</a></li>
+          <li><a href="login.html"><img src="svg\user.svg" alt="Иконка войти">Войти</a></li>
+          <li><a href="compare.html"><img src="svg\compare.svg" alt="Сравнить">Сравнить</a></li>
+          <li><a href="shoppingbasket.html"><img src="svg\cart.svg" alt="Иконка корзины">Корзина</a></li>
         </ul>
     </nav>
     <a class="footer-contacts">Тел.: +7 (495) 495-95-95</a><br>
-    <img src="C:\Users\Евгений\Desktop\html css\Проект2\svg\logo-html.svg" alt="Логотип">
+    <a class="footer-logo-html" href="http://htmlacademy.ru" aria-label="htmlacademy">
+      <img src="svg\logo-html.svg" alt="Логотип html academy">
+    </a>
   </footer>
 
   <section class="login">

@@ -1,27 +1,27 @@
 @font-face {
     font-family: 'Gilroyextrabold';
-    src: url('gilroyextrabold-webfont.woff2') format('woff2');
+    src: url('../fonts/Gilroyextrabold/gilroyextrabold-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroylight';
-    src: url('gilroylight-webfont.woff2') format('woff2');
+    src: url('../fonts/Gilroylight/gilroylight-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Open_sanslight';
-    src: url('opensans-light-webfont.woff2') format('woff2'));
+    src: url('../fonts/OpenSans-Light/opensans-light-webfont.woff2') format('woff2'));
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Open_sansregular';
-    src: url('opensans-regular-webfont.woff2') format('woff2');
+    src: url('../fonts/OpenSans-Regular/opensans-regular-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -42,19 +42,48 @@ a {
   text-decoration: none;
 }
 
+/* Main css*/
+
+.search{
+  font: inherit;
+  text-align: left;
+  color: #ffffff;
+  vertical-align: middle;
+
+  background-color: #f7e296;
+  border: none;
+
+  opacity: 0.4;
+}
+
+.search:hover{
+  opacity: 0.7;
+}
+
+.search:focus{
+  opacity: 1;
+}
+
 .button {
   font: inherit;
+
+  font-size: 18px;
+  line-height: 24px;
 
   text-align: center;
   color: #000000;
   vertical-align: middle;
-  text-transform: uppercase;
 
   background-color: #f0c52e;
   border: none;
 }
 
-.main-navigation-search {
+.button:focus{
+  background-color: #000000;
+  color: rgb(247, 225, 132);
+}
+
+.navigation-search {
   font-family: "Open_sanslight", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -62,7 +91,7 @@ a {
 
 .button-search {
   background-color: #f7e296;
-  border: 2px solid: #000000;
+  border: 2px solid #000000;
 }
 
 .button-search:hover,
@@ -75,47 +104,57 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.main-navigation-user {
+.navigation-user {
   font-family: "Open_sanslight", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
 }
 
-.main-logo {
+.logo {
   font-size: 48px;
   line-height: 48px;
 }
 
-.main-navigation-site {
+.navigation-site {
   font-size: 18px;
   line-height: 24px;
 }
 
-.main-navigation-user,
-.main-navigation-site{
+.main-navigation-catalog{
+  font-family: "Open_sanslight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.navigation-user,
+.navigation-site,
+.main-navigation-catalog{
   list-style: none;
 }
 
-.main-navigation-user a,
-.main-navigation-site a{
+.navigation-user a,
+.navigation-site a,
+.main-navigation-catalog a{
   color: #000000;
 }
 
-.main-navigation-user a:hover,
-.main-navigation-site a:hover {
-  opacity: 0.4;
+.navigation-user a:hover,
+.navigation-site a:hover,
+.main-navigation-catalog a:hover {
+  opacity: 0.7;
 }
 
-.main-navigation-user a:focus,
-.main-navigation-site a:focus {
-  opacity: 0.7;
+.navigation-user a:focus,
+.navigation-site a:focus,
+.main-navigation-catalog a:focus{
+  opacity: 0.4;
 }
 
 .button-catalog-open{
   background-color: #f7e296;
 }
 
-.main-navigation {
+.navigation {
   background-color:#f7e296;
 }
 
@@ -146,10 +185,13 @@ a {
   line-height: 20px;
 }
 
-.advantages-button {
+.advantages-button:focus{
+  background-color: rgba(240, 197, 46, 0.4);
 }
 
 .main-catalog-list {
+  font-size: 18px;
+  line-height: 24px;
   list-style: none;
 }
 
@@ -166,9 +208,12 @@ a {
 }
 
 .main-catalog-item a:focus{
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
+.delivery{
+  background-color: rgb(229, 229, 229);
+}
 .delivery-hidden{
   font-size: 47px;
   line-height: 48px;
@@ -187,4 +232,225 @@ a {
 
 .delivery-navigation-list a{
   color: #000000;
+}
+
+.delivery-text {
+  font-family: "Open_sanslight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.brand-list{
+  list-style: none;
+  opacity: 0.2;
+}
+
+.brand-list:hover,
+.brand-list:focus{
+  opacity: 0.9;
+}
+
+.contacts-about-me{
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.contacts-text {
+  font-family: "Open_sanslight", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.footer{
+  background-color: rgb(70, 70, 70);
+}
+.footer-button-DEVICE{
+  color: rgb(255, 198, 0);
+}
+
+.footer-button-DEVICE:hover{
+  opacity: 0.7;
+}
+
+.footer-button-DEVICE:focus{
+  opacity: 0.4;
+}
+
+.footer-text{
+  font-family: "Open_sanslight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.footer-navigation-delivery{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-navigation-delivery,
+.footer-navigation-social,
+.footer-navigation-user,
+.footer-logo-html{
+  list-style: none;
+}
+
+.footer-navigation-delivery a,
+.footer-navigation-user a{
+  color: #ffffff;
+}
+
+.footer-navigation-social a{
+  opacity: 0.7;
+}
+
+.footer-navigation-social a:hover{
+  opacity: 1;
+}
+
+.footer-navigation-delivery a:hover,
+.footer-navigation-user a:hover,
+.footer-logo-html:hover{
+  opacity: 0.7;
+}
+
+.footer-navigation-delivery a:focus,
+.footer-navigation-user a:focus,
+.footer-navigation-social a:focus,
+.footer-logo-html:focus {
+  opacity: 0.4;
+}
+
+.footer-navigation-user img{
+  color: rgb(255, 198, 0);
+}
+
+.footer-contacts{
+  font-family: "Open_sanslight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+/* catalog css*/
+
+.advantages-hidden{
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.lenta{
+  list-style: none;
+}
+
+.lenta a{
+  color: #000000;
+}
+
+.lenta-list{
+  font-family: "Open_sanslight", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+
+  opacity: 0.7;
+}
+
+.lenta-list:hover{
+  opacity: 1;
+}
+
+.lenta-list:focus{
+  opacity: 0.4;
+}
+
+.filtare-hidden{
+  font-size: 16px;
+  line-height: 24px;
+
+  background-color: rgb(219, 219, 219);
+}
+
+.filtare-range,
+.filter-nav-hidden{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.filtare-nav{
+  font-family: "Open_sanslight", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+
+  list-style: none;
+}
+
+.filtare-rgb{
+  background-color: rgb(239, 239, 239);
+}
+
+.monopod{
+  background-color: rgb(239, 239, 239);
+}
+.monopod-hidden{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.monopod-nav{
+  list-style: none;
+}
+
+.monopod-nav a{
+  font-family: "Open_sansregular", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+
+  color: #000000;
+
+  opacity: 0.4;
+}
+
+.monopod-nav a:hover{
+  opacity: 0.7;
+}
+
+.monopod-nav a:focus{
+  opacity: 1;
+}
+
+.catalog-list{
+  list-style: none;
+}
+
+.catalog-text{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.catalog-cost{
+  font-family: "Gilroylight", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.catalog-page-nav{
+  background-color: rgb(239, 239, 239);
+}
+
+.catalog-button-nav{
+  font: inherit;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+
+  background-color: rgb(235, 235 , 235);
+  border: none;
+}
+
+.button-number{
+  opacity: 0.7;
 }
