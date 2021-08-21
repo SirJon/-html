@@ -13,46 +13,55 @@
 </head>
 
 <body>
-  <header class="catalog-header">
-    <nav class="navigation">
-      <form class="navigation-search">
-        <img src="svg\search.svg" alt="Иконка найти">
-        <input type="search" name="Поиск" id="main-search" class="search" placeholder="Поиск по сайту...">
-        <label class="visually-hidden" for="main-search">Найти</label>
-        <button class="button button-search" type="submit">Найти</button>
-      </form>
+  <header class="main-header">
+    <div class="container-center">  
+      <nav class="navigation">       
+        <ul class="navigation-device">
+          <li><a  href="#">DEVICE</a></li>
+        </ul>        
+        <div class="navigation-wrapper">
+          <form  class="navigation-search">
+            <img src="svg\search.svg" alt="Иконка найти">
+            <input type="search" name="Поиск" id="main-search" class="search" placeholder="Поиск по сайту...">
+            <label class="visually-hidden" for="main-search">Найти</label>
+            <button class="button button-search" type="submit">Найти</button>
+          </form>
 
-      <ul class="navigation-user">
-        <li><a href="#"><img src="svg\user.svg" alt="Иконка войти">Войти</a></li>
-        <li><a href="#"><img src="svg\compare.svg" alt="Сравнить">Сравнить</a></li>
-        <li><a href="#"><img src="svg\cart.svg" alt="Иконка корзины">Корзина</a></li>
-      </ul>
+          <ul class="navigation-user">
+            <li><a href="#"><img src="svg\user.svg" alt="Иконка войти">Максим Кононихин</a></li>
+            <li class="navigation-user-logoff"><a href="#">Выйти</a></li>
+            <li><a href="#"><img src="svg\compare.svg" alt="Сравнить">Сравнить</a></li>
+            <li><a href="#"><img src="svg\cart.svg" alt="Иконка корзины">Корзина</a></li>
+         </ul>
+        </div>
 
-      <ul class="navigation-site">
-        <li class="logo"><a class="button-DEVICE" href="Main.html">DEVICE</a></li>
-        <li>
-          <a href="#">Каталог товаров</a>
-          <button class="button button-catalog-open" type="button" name="Открыть каталог">
-            <img src="svg\plus.svg" alt="Открыть каталог товаров">
-          </button>
-        </li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
+        <ul class="navigation-site">           
+          <li>
+            <a href="#">Каталог товаров</a>
+             <button class="button button-catalog-open" type="button" name="Открыть каталог">
+              <img src="svg\plus.svg" alt="Открыть каталог товаров">
+             </button>
+          </li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
 
-      <ul class="navigation-catalog">
-        <li><a href="#">Виртуальная реальность</a></li>
-        <li><a href="catalog.html">Моноподы для селфи</a></li>
-        <li><a href="#">Экшн-камеры</a></li>
-        <li><a href="#"">Фитнес браслеты</a></li>
-        <li><a href="#">Умные часы</a></li>
-        <li><a href="#">Квадрокоптеры</a></li>
-      </ul>
-    </nav>
+         <ul class="navigation-catalog">
+          <li><a href="#">Виртуальная реальность</a></li>
+          <li><a href="catalog.html">Моноподы для селфи</a></li>
+          <li><a href="#">Экшн-камеры</a></li>
+          <li><a href="#"">Фитнес браслеты</a></li>
+          <li><a href="#">Умные часы</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="container">
+    <div class="container-center">
+    <div class="h1-wrapper">
     <h1 class="advantages-hidden">Моноподы для селфи</h1>
     <ul class="lenta">
       <li><a class="lenta-list" href="#">Главная</a></li>
@@ -61,8 +70,38 @@
       <li><img src="svg\nav-arrow.svg"></li>
       <li><a class="lenta-list" href="catalog.html">Моноподы для селфи</a></li>
     </ul>
-    <form class="filtare" method="post">
-      <h2 class="filtare-hidden">ФИЛЬТР:</h2>
+    </div>
+    </div>
+    <div class="container-center">
+    <div class="filtare-wrapper">
+      <h2 class="filtare-hidden">Фильтр:</h2>
+      <section class="monopod">
+        <h2 class="monopod-hidden">
+          Сортировка:
+        </h2>
+        <ul class="monopod-nav">
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По популярности</a></li>
+        </ul>
+        <ul class="monopod-nav">
+          <li>
+            <a href="#">
+              <img src="svg\icon-down-dir.svg" alt="Фильтр от большегоо к меньшему">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="svg\icon-up-dir.svg" alt="Фильтр от меньшего к большему">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <div class="container-center">
+  <div class="filtare-wrapper">
+      <form class="filtare" method="post">
       <div class="filtare-rgb">
         <label>
           <input class="filtare-range" type="range" name="filtare-cost">Стоимость
@@ -123,29 +162,7 @@
         </fieldset>
         <button class="button advantages-button" type="submit">Показать</button>
       </div>
-    </form>
-    <section class="monopod">
-      <h2 class="monopod-hidden">
-        СОРТИРОВКА:
-      </h2>
-      <ul class="monopod-nav">
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По популярности</a></li>
-      </ul>
-      <ul class="monopod-nav">
-        <li>
-          <a href="#">
-            <img src="svg\icon-down-dir.svg" alt="Фильтр от большегоо к меньшему">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="svg\icon-up-dir.svg" alt="Фильтр от меньшего к большему">
-          </a>
-        </li>
-      </ul>
-    </section>
+    </form>    
     <section class="catalog">
       <h2 class="visually-hidden">
         Каталог товаров
@@ -172,46 +189,48 @@
           <b class="catalog-cost">4900 руб.</b>
         </li>
       </ul>
+      <nav class="catalog-page-nav">
+        <ul>
+          <button class="catalog-button-nav" aria-label="Перелестнуть ленту с товарами назад">
+            Назад
+          </button>
+          <button class="catalog-button-nav button-number" aria-label="Первая страница ленты с товарами">
+            1
+          </button>
+          <button class="catalog-button-nav button-number" aria-label="Вторая страница ленты с товарами">
+            2
+          </button>
+          <button class="catalog-button-nav button-number" aria-label="Третья страница ленты с товарами">
+            3
+          </button>
+          <button class="catalog-button-nav" aria-label="Перелестнуть ленту с товарами вперед">
+            Вперёд
+          </button>
+        </ul>
+      </nav>
     </section>
-    <nav class="catalog-page-nav">
-      <ul>
-        <button class="catalog-button-nav" aria-label="Перелестнуть ленту с товарами назад">
-          Назад
-        </button>
-        <button class="catalog-button-nav button-number" aria-label="Первая страница ленты с товарами">
-          1
-        </button>
-        <button class="catalog-button-nav button-number" aria-label="Вторая страница ленты с товарами">
-          2
-        </button>
-        <button class="catalog-button-nav button-number" aria-label="Третья страница ленты с товарами">
-          3
-        </button>
-        <button class="catalog-button-nav" aria-label="Перелестнуть ленту с товарами вперед">
-          Вперёд
-        </button>
-      </ul>
-    </nav>
+  </div>
+  </div>
   </main>
 </body>
+
 <footer class="footer">
-  <div">
+  <div class="container-center">
+    <div class="footer-wrapper">
+  <div class="footer-firts-colums">
     <p class="footer-contacts-text">
-      <a class="logo footer-button-DEVICE"  href="#">
+      <a class="footer-button-DEVICE"  href="#">
         DEVICE
       </a><br>
-      <b class="footer-text">г. Москва, ул. Строителей, 15</b><br>
-      <a class="footer-another-logo">
-        <img src="" alt="Нижнее подчеркивание" >
-      </a>
+      <b class="footer-text">г. Москва, ул. Строителей, 15</b>
     </p>
   </div>
-
+  <div class="footer-second-colums">
   <nav>
       <ul class="footer-navigation-delivery">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
-        <li><a href="#>Кредит</a></li>
+        <li><a href="#">Кредит</a></li>
       </ul>
       <ul class="footer-navigation-social">
         <li>
@@ -230,6 +249,10 @@
           </a>
         </li>
       </ul>
+  </nav>
+  </div>
+  <div class="footer-third-colums">
+  <nav>
       <ul class="footer-navigation-user">
         <li><a href="#"><img src="svg\user.svg" alt="Иконка войти">Войти</a></li>
         <li><a href="#"><img src="svg\compare.svg" alt="Сравнить">Сравнить</a></li>
@@ -240,8 +263,11 @@
   <a class="footer-logo-html" href="http://htmlacademy.ru" aria-label="htmlacademy">
     <img src="svg\logo-html.svg" alt="Логотип html academy">
   </a>
+</div>
+</div>
+</div>
 </footer>
-
+<!--
 <section class="login">
   <h2>Личный кабинет</h2>
   <p>Введите свой логин и пароль</p>
@@ -262,6 +288,5 @@
     <button class="button" type="submit">Войти</button>
   </form>
   <button class="popup-close" type="button">Закрыть</button>
-</section>
-
+</section>-->
 </html>

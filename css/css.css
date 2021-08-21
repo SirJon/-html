@@ -65,13 +65,25 @@ a {
   margin: 40px 0 0 0;
 }
 
-.navigation{
-  background-color:#f7e296;
+.container-center{
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.navigation-site-device{
+.navigation{
+  background-color:#f7e296;  
+  padding: 0 60px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-device{
   font-size: 48px;
   line-height: 48px;
+
+  margin: -24px 0 0 0;
 }
 
 .search{
@@ -113,6 +125,13 @@ a {
   color: rgb(66, 61, 35);
 }
 
+.navigation-wrapper{
+  margin: 36px 0 0 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
 .navigation-search {
   font-family: "Open_sanslight", Arial, sans-serif;
   font-size: 15px;
@@ -140,53 +159,47 @@ a {
   line-height: 30px;
 }
 
-.navigation-search-and-user{
-  width: 100%;
-  margin: 0;
-}
-
-.container{
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
 .navigation-site {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
+
+  margin: 50px 0 0 0;
 }
 
 .navigation-catalog{
   font-family: "Open_sanslight", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
+
+  margin: 0 0 160px 0;
 }
 
 .navigation-user,
 .navigation-site,
 .navigation-catalog,
-.navigation-site-device{
+.navigation-device{
   list-style: none;
 }
 
 .navigation-user a,
 .navigation-site a,
 .navigation-catalog a,
-.navigation-site-device a{
+.navigation-device a{
   color: #000000;
 }
 
 .navigation-user a:hover,
 .navigation-site a:hover,
 .navigation-catalog a:hover,
-.navigation-site-device a:hover {
+.navigation-device a:hover {
   opacity: 0.7;
 }
 
 .navigation-user a:focus,
 .navigation-site a:focus,
 .navigation-catalog a:focus,
-.navigation-site-device a:focus{
+.navigation-device a:focus{
   opacity: 0.4;
 }
 
@@ -202,6 +215,16 @@ a {
 
 .advantages-list {
   list-style: none;
+
+  margin: -120px 60px 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-list-text{
+  order: 1;
+  margin: auto 0 0 0;
 }
 
 .advantages-heading {
@@ -235,6 +258,11 @@ a {
   font-size: 18px;
   line-height: 24px;
   list-style: none;
+
+  margin: 120px 0 0;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-catalog-item a{
@@ -255,10 +283,34 @@ a {
 
 .delivery{
   background-color: rgb(229, 229, 229);
+  height: 288px;
+
+  margin: 185px 0 0;
 }
+
+.delivery-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery-wrapper-inside{
+  display: flex;
+  margin: 0 60px 0 0;
+}
+
 .delivery-hidden{
   font-size: 47px;
   line-height: 48px;
+}
+
+.delivery-navigation{
+  width: 300px;
+
+  margin: -14px 0 0 0;
+}
+
+.delivery-column{
+  margin: -28px 0 0 0;
 }
 
 .delivery-navigation b{
@@ -283,6 +335,13 @@ a {
 }
 
 .brand-list{
+  margin: 105px 60px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-list{
   list-style: none;
 }
 
@@ -292,6 +351,15 @@ a {
 
 .brand li:hover{
   opacity: 1;
+}
+
+.contacts{
+  display: flex;
+  justify-content: space-between;
+
+  width: 1160px;
+  margin: 100px auto 0;
+  padding: 0 20px;
 }
 
 .contacts-about-me{
@@ -307,10 +375,26 @@ a {
 
 .footer{  
   background-color: rgb(70, 70, 70);
+  margin: 95px 0 0 0;
+  height: 325px;
 }
+
+.footer-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-firts-colums,
+.footer-second-colums,
+.footer-third-colums{
+  margin: 70px 0 0 0;
+}
+
 .footer-button-DEVICE{
   font-family: "Gilroyextrabold", Arial, sans-serif;
   color: rgb(255, 198, 0);
+  font-size: 48px;
+  line-height: 48px;
 }
 
 .footer-button-DEVICE:hover{
@@ -388,6 +472,14 @@ a {
 
 /* catalog css*/
 
+.navigation-user-logooff{
+  opacity: 0.4;
+}
+
+.h1-wrapper{
+  margin: 42px 60px 0;
+}
+
 .advantages-hidden{
   font-size: 47px;
   line-height: 48px;
@@ -395,6 +487,7 @@ a {
 
 .lenta{
   list-style: none;
+  display: flex;
 }
 
 .lenta a{
@@ -417,11 +510,25 @@ a {
   opacity: 0.4;
 }
 
+.filtare{
+  width: 325px;
+}
+
+.filtare-wrapper{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .filtare-hidden{
   font-size: 16px;
   line-height: 24px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 
   background-color: rgb(219, 219, 219);
+  width: 325px;
 }
 
 .filtare-range,
@@ -444,14 +551,21 @@ a {
 
 .monopod{
   background-color: rgb(239, 239, 239);
+  width: 835px;
+
+  display: flex;
 }
 .monopod-hidden{
   font-size: 16px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .monopod-nav{
   list-style: none;
+
+  display: flex;
+  align-items: center;
 }
 
 .monopod-nav a{
@@ -472,8 +586,15 @@ a {
   opacity: 1;
 }
 
+.catalog{
+  width: 825px;
+}
+
 .catalog-list{
   list-style: none;
+
+  display: flex;
+  width: 825px;
 }
 
 .catalog-text{
