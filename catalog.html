@@ -17,7 +17,7 @@
     <div class="container-center">  
       <nav class="navigation">       
         <ul class="navigation-device">
-          <li><a  href="#">DEVICE</a></li>
+          <li><a  href="Main.html">DEVICE</a></li>
         </ul>        
         <div class="navigation-wrapper">
           <form  class="navigation-search">
@@ -27,9 +27,9 @@
             <button class="button button-search" type="submit">Найти</button>
           </form>
 
-          <ul class="navigation-user">
+          <ul class="navigation-user navigation-transparent">
             <li><a href="#"><img src="svg\user.svg" alt="Иконка войти">Максим Кононихин</a></li>
-            <li class="navigation-user-logoff"><a href="#">Выйти</a></li>
+            <li><a href="#">Выйти</a></li>
             <li><a href="#"><img src="svg\compare.svg" alt="Сравнить">Сравнить</a></li>
             <li><a href="#"><img src="svg\cart.svg" alt="Иконка корзины">Корзина</a></li>
          </ul>
@@ -61,24 +61,24 @@
 
   <main class="container">
     <div class="container-center">
-    <div class="h1-wrapper">
-    <h1 class="advantages-hidden">Моноподы для селфи</h1>
-    <ul class="lenta">
-      <li><a class="lenta-list" href="#">Главная</a></li>
-      <li><img src="svg\nav-arrow.svg"></li>
-      <li><a class="lenta-list" href="#">Каталог товаров</a></li>
-      <li><img src="svg\nav-arrow.svg"></li>
-      <li><a class="lenta-list" href="catalog.html">Моноподы для селфи</a></li>
-    </ul>
-    </div>
+      <div class="h1-wrapper">
+        <h1 class="advantages-hidden">Моноподы для селфи</h1>
+          <ul class="lenta">
+           <li><a class="lenta-list" href="#">Главная</a></li>
+           <li><img src="svg\nav-arrow.svg"></li>
+           <li><a class="lenta-list" href="#">Каталог товаров</a></li>
+           <li><img src="svg\nav-arrow.svg"></li>
+           <li><a class="lenta-list" href="catalog.html">Моноподы для селфи</a></li>
+          </ul>
+      </div>
     </div>
     <div class="container-center">
-    <div class="filtare-wrapper">
+     <div class="filtare-wrapper">
       <h2 class="filtare-hidden">Фильтр:</h2>
       <section class="monopod">
-        <h2 class="monopod-hidden">
+        <h3 class="monopod-hidden">
           Сортировка:
-        </h2>
+        </h3>
         <ul class="monopod-nav">
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
@@ -100,9 +100,8 @@
     </div>
   </div>
   <div class="container-center">
-  <div class="filtare-wrapper">
+    <div class="filtare-wrapper">
       <form class="filtare" method="post">
-      <div class="filtare-rgb">
         <label>
           <input class="filtare-range" type="range" name="filtare-cost">Стоимость
         </label>
@@ -161,7 +160,6 @@
           </ul>
         </fieldset>
         <button class="button advantages-button" type="submit">Показать</button>
-      </div>
     </form>    
     <section class="catalog">
       <h2 class="visually-hidden">
@@ -169,43 +167,43 @@
       </h2>
       <ul class="catalog-list">
         <li>
-          <img src="svg\lite-stick.jpg" aria-label="Селфи палка">
+          <img src="svg\lite-stick.jpg" width="360" aria-label="Селфи палка">
           <b class="catalog-text">Любительская селфи-палка</b>
           <b class="catalog-cost">500 руб.</b>
         </li>
         <li>
-          <img src="svg\pro-stick.jpg" aria-label="Селфи палка pro">
+          <img src="svg\pro-stick.jpg" width="360" aria-label="Селфи палка pro">
           <b class="catalog-text">Профессиональная селфи-палка</b>
           <b class="catalog-cost">1500 руб.</b>
         </li>
         <li>
-          <img src="svg\watertight-stick.jpg" aria-label="Селфи палка непотопляемая">
+          <img src="svg\watertight-stick.jpg" width="360" aria-label="Селфи палка непотопляемая">
           <b class="catalog-text">Непотопляемая селфи-палка</b>
           <b class="catalog-cost">2500 руб.</b>
         </li>
         <li>
-          <img src="svg\hand-stick.jpg" aria-label="Селфи палка рука">
+          <img src="svg\hand-stick.jpg" width="360" aria-label="Селфи палка рука">
           <b class="catalog-text">Селфи-палка "Следуй за мной"</b>
           <b class="catalog-cost">4900 руб.</b>
         </li>
       </ul>
-      <nav class="catalog-page-nav">
-        <ul>
-          <button class="catalog-button-nav" aria-label="Перелестнуть ленту с товарами назад">
+      <nav>
+        <ul class="catalog-page-nav">
+          <li><button class="catalog-button-nav" aria-label="Перелестнуть ленту с товарами назад">
             Назад
-          </button>
-          <button class="catalog-button-nav button-number" aria-label="Первая страница ленты с товарами">
+          </button></li>
+          <li><button class="catalog-button-nav button-number" aria-label="Первая страница ленты с товарами">
             1
-          </button>
-          <button class="catalog-button-nav button-number" aria-label="Вторая страница ленты с товарами">
+          </button></li>
+          <li><button class="catalog-button-nav button-number" aria-label="Вторая страница ленты с товарами">
             2
-          </button>
-          <button class="catalog-button-nav button-number" aria-label="Третья страница ленты с товарами">
+          </button></li>
+          <li><button class="catalog-button-nav button-number" aria-label="Третья страница ленты с товарами">
             3
-          </button>
-          <button class="catalog-button-nav" aria-label="Перелестнуть ленту с товарами вперед">
+          </button></li>
+          <li><button class="catalog-button-nav" aria-label="Перелестнуть ленту с товарами вперед">
             Вперёд
-          </button>
+          </button></li>
         </ul>
       </nav>
     </section>
@@ -214,58 +212,59 @@
   </main>
 </body>
 
-<footer class="footer">
+<footer class="footer-catalog">
   <div class="container-center">
     <div class="footer-wrapper">
-  <div class="footer-firts-colums">
-    <p class="footer-contacts-text">
-      <a class="footer-button-DEVICE"  href="#">
-        DEVICE
-      </a><br>
-      <b class="footer-text">г. Москва, ул. Строителей, 15</b>
-    </p>
-  </div>
-  <div class="footer-second-colums">
-  <nav>
-      <ul class="footer-navigation-delivery">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Кредит</a></li>
-      </ul>
-      <ul class="footer-navigation-social">
-        <li>
+      <div class="footer-firts-colums">
+        <p class="footer-contacts-text">
+          <a class="footer-button-DEVICE"  href="#">
+           DEVICE
+          </a><br>
+          <b class="footer-text">г. Москва, ул. Строителей, 15</b>
+        </p>
+      </div>
+      <div class="footer-second-colums">
+       <nav>
+        <ul class="footer-navigation-delivery">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Кредит</a></li>
+        </ul>
+        <ul class="footer-navigation-social">
+         <li>
           <a class="social-button" href="https://www.facebook.com/" aria-label="FaceBook">
             <img src="svg\fb.svg" alt="Иконка FaceBook">
           </a>
-        </li>
-        <li>
+         </li>
+         <li>
           <a class="social-button" href="https://vk.com/" aria-label="Vkontakte">
             <img src="svg\vk.svg" alt="Иконка FaceBook">
           </a>
-        </li>
-        <li>
+         </li>
+         <li>
           <a class="social-button" href="https://twitter.com/" aria-label="Twitter">
             <img src="svg\twitter.svg" alt="Иконка FaceBook">
           </a>
-        </li>
-      </ul>
-  </nav>
+         </li>
+        </ul>
+       </nav>
+      </div>
+    <div class="footer-third-colums">
+      <nav>
+        <ul class="footer-navigation-user navigation-transparent">
+         <li><a href="#"><img src="svg\user.svg" alt="Иконка войти">Максим Кононихин</a></li>
+         <li><a href="#">Выйти</a></li>
+         <li><a href="#"><img src="svg\compare.svg" alt="Сравнить">Сравнить</a></li>
+         <li><a href="#"><img src="svg\cart.svg" alt="Иконка корзины">Корзина</a></li>
+        </ul>
+      </nav>
+      <a class="footer-contacts">Тел.: +7 (495) 495-95-95</a><br>
+      <a class="footer-logo-html" href="http://htmlacademy.ru" aria-label="htmlacademy">
+        <img src="svg\logo-html.svg" alt="Логотип html academy">
+      </a>
+    </div>
+   </div>
   </div>
-  <div class="footer-third-colums">
-  <nav>
-      <ul class="footer-navigation-user">
-        <li><a href="#"><img src="svg\user.svg" alt="Иконка войти">Войти</a></li>
-        <li><a href="#"><img src="svg\compare.svg" alt="Сравнить">Сравнить</a></li>
-        <li><a href="#"><img src="svg\cart.svg" alt="Иконка корзины">Корзина</a></li>
-      </ul>
-  </nav>
-  <a class="footer-contacts">Тел.: +7 (495) 495-95-95</a><br>
-  <a class="footer-logo-html" href="http://htmlacademy.ru" aria-label="htmlacademy">
-    <img src="svg\logo-html.svg" alt="Логотип html academy">
-  </a>
-</div>
-</div>
-</div>
 </footer>
 <!--
 <section class="login">

@@ -472,8 +472,16 @@ a {
 
 /* catalog css*/
 
-.navigation-user-logooff{
+.navigation-transparent li:nth-child(2){
   opacity: 0.4;
+}
+
+.navigation-transparent li:nth-child(2):hover{
+  opacity: 1;
+}
+
+.navigation-transparent li:nth-child(2):focus{
+  opacity: 0.7;
 }
 
 .h1-wrapper{
@@ -511,6 +519,7 @@ a {
 }
 
 .filtare{
+  background-color: rgb(239, 239, 239);
   width: 325px;
 }
 
@@ -543,10 +552,6 @@ a {
   line-height: 40px;
 
   list-style: none;
-}
-
-.filtare-rgb{
-  background-color: rgb(239, 239, 239);
 }
 
 .monopod{
@@ -592,9 +597,17 @@ a {
 
 .catalog-list{
   list-style: none;
+  margin: 70px 55px 75px;
 
   display: flex;
+  flex-wrap: wrap;
   width: 825px;
+}
+
+.catalog-list li{
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
 }
 
 .catalog-text{
@@ -610,6 +623,19 @@ a {
 
 .catalog-page-nav{
   background-color: rgb(239, 239, 239);
+  list-style: none;
+
+  margin: 0 0 0 72px;
+
+  display: flex;
+}
+
+.catalog-page-nav li:nth-child(2){
+  margin: 0 0 0 auto;
+}
+
+.catalog-page-nav li:nth-child(4){
+  margin: 0 auto 0 0;
 }
 
 .catalog-button-nav{
@@ -628,4 +654,10 @@ a {
 
 .button-number{
   opacity: 0.7;
+}
+
+.footer-catalog{  
+  background-color: rgb(70, 70, 70);
+  margin: 0;
+  height: 325px;
 }
