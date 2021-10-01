@@ -14,59 +14,59 @@
 
 <body>
   <header class="main-header">
-    <div class="container-center">  
-      <nav class="navigation">       
-        <ul class="navigation-device">
-          <li><a  href="Main.html">DEVICE</a></li>
-        </ul>        
-        <div class="navigation-wrapper">
-          <form  class="navigation-search">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/></svg>
-            <input type="search" name="Поиск" id="main-search" class="search" placeholder="Поиск по сайту...">
-            <label class="visually-hidden" for="main-search">Найти</label>
-            <button class="button button-search" type="submit">Найти</button>
-          </form>
-
-          <ul class="navigation-user">
-            <li><a href="#"><img class="navigation-user-img" src="svg\user.svg" alt="Иконка войти">Войти</a></li>
-            <li><a href="#"><img class="navigation-user-img" src="svg\compare.svg" alt="Сравнить">Сравнить</a></li>
-            <li><a href="#"><img class="navigation-user-img" src="svg\cart.svg" alt="Иконка корзины">Корзина</a></li>
-         </ul>
-        </div>
-
-        <ul class="navigation-site">           
-          <li>
-            <a href="#">Каталог товаров</a>
-             <button class="button button-catalog-open" type="button" name="Открыть каталог">
-              <img src="svg\plus.svg" alt="Открыть каталог товаров">
-             </button>
-          </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <!--
-        <div class="navigation-catalog-wrapper">
-         <ul class="navigation-catalog">
-          <li>
-            <ul class="navigation-catalog-line">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="catalog.html">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
+    <div class="container-center fill_with_color">
+        <nav class="navigation-top">
+            <ul class="navigation-device">
+                <li><a  href="Main.html">DEVICE</a></li>
             </ul>
-          </li>
-          <li>
-            <ul class="navigation-catalog-line">
-              <li><a href="#">Фитнес браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Квадрокоптеры</a></li>
-        </ul>
-      </div>
-    -->
+            <div class="navigation-wrapper">
+                <form  class="navigation-search">              
+                  <label for="main-search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/></svg></label>
+                  <input type="search" name="Поиск" id="main-search" class="search" placeholder="Поиск по сайту...">
+                  <button class="button button-search" type="submit">Найти</button>
+                </form>
+    
+                <ul class="navigation-user js-catalog">
+                  <li><a href="#"><img class="navigation-user-img" src="svg\user.svg" alt="Иконка user">Войти</a></li>
+                  <li class="visually-hidden"><a href="#"><svg class="navigation-user-img" xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>Максим Кононихин</a></li>
+                  <li class="visually-hidden user-exit"><a class="navigation-user-exit" href="#">Выйти</a></li>
+                  <li><a href="#"><img class="navigation-user-img" src="svg\compare.svg" alt="Сравнить">Сравнить</a></li>
+                  <li><a href="#"><img class="navigation-user-img" src="svg\cart.svg" alt="Иконка корзины">Корзина</a></li>
+               </ul>
+              </div>
+        </nav>
+        <nav class="navigation-bottom">
+          <div class="navigation-bottom-catalog">
+              <a class="navigation-site catalog-product" href="#">
+                  Каталог товаров
+                  <img src="svg\plus.svg" alt="Открыть каталог товаров">                
+              </a>
+              <div class="navigation-catalog-show">
+                <ul class="navigation-catalog">
+                  <li>
+                      <ul class="navigation-catalog-line line-big">
+                          <li><a href="#">Виртуальная реальность</a></li>
+                          <li><a href="catalog.html">Моноподы для селфи</a></li>
+                          <li><a href="#">Экшн-камеры</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <ul class="navigation-catalog-line">
+                          <li><a href="#">Фитнес браслеты</a></li>
+                          <li><a href="#">Умные часы</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+              </div>                
+          </div>
+          <ul class="navigation-site navigation-site-nav">
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Контакты</a></li>
+          </ul>
       </nav>
-    </div>
+    </div>            
   </header>
 
   <main class="container">
@@ -100,31 +100,31 @@
           </legend>
           <ul class="filtare-nav">
             <li>
-              <input type="checkbox" name="black" id="filtare-black">
+              <input class="visually-hidden checkbox" type="checkbox" name="black" id="filtare-black">
               <label for="filtare-black">
                 Чёрный
               </label>
             </li>
             <li>
-              <input type="checkbox" name="white" id="filtare-white">
+              <input class="visually-hidden checkbox" type="checkbox" name="white" id="filtare-white">
               <label for="filtare-white">
                 Белый
               </label>
             </li>
             <li>
-              <input type="checkbox" name="blue" id="filtare-blue">
+              <input class="visually-hidden checkbox" type="checkbox" name="blue" id="filtare-blue">
               <label for="filtare-blue">
                 Синий
               </label>
             </li>
             <li>
-              <input type="checkbox" name="red" id="filtare-red">
+              <input class="visually-hidden checkbox" type="checkbox" name="red" id="filtare-red">
               <label for="filtare-red">
                 Красный
               </label>
             </li>
             <li>
-              <input type="checkbox" name="pink" id="filtare-pink">
+              <input class="visually-hidden checkbox" type="checkbox" name="pink" id="filtare-pink">
               <label for="filtare-pink">
                 Розовый
               </label>
@@ -135,13 +135,13 @@
           <legend class="filter-nav-hidden">Bluetooth</legend>
           <ul class="filtare-nav-yn">
             <li>
-              <input type="radio" name="bluetooth" id="filtare-yes" checked>
+              <input class="visually-hidden radio" type="radio" name="bluetooth" id="filtare-yes" checked>
               <label for="filtare-yes">
                 Есть
               </label>
             </li>
             <li>
-              <input type="radio" name="bluetooth" id="filtare-no">
+              <input class="visually-hidden radio" type="radio" name="bluetooth" id="filtare-no">
               <label for="filtare-no">
                 Нет
               </label>
@@ -157,7 +157,7 @@
           Сортировка:
         </h3>
         <ul class="monopod-nav">
-          <li><a href="#">По цене</a></li>
+          <li><a class="cost" href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По популярности</a></li>
         </ul>
@@ -183,13 +183,13 @@
             <div class="catalog-list-img">
               <img src="svg\lite-stick.jpg" width="360" height="380" aria-label="Селфи палка">
               <div class="catalog-list-button">
-                <button class="button button-dynamic catalog-button" type="button"><b>В корзину</b></button>
+                <button class="button button-dynamic catalog-button" type="button"><span>В корзину</span></button>
                 <a class="catalog-list-button-text" href="#">Добавить к сравнению</a>
               </div>
             </div>
             <div class="catalog-list-text">
               <a class="catalog-text" href="#">Любительская селфи-палка</a>
-              <b class="catalog-cost">500 руб.</b>
+              <span class="catalog-cost">500 руб.</span>
             </div>
           </li>
           <li>
@@ -202,7 +202,7 @@
             </div>
             <div class="catalog-list-text">
               <a class="catalog-text" href="#">Профессиональная селфи-палка</a>
-              <b class="catalog-cost">1500 руб.</b>
+              <span class="catalog-cost">1500 руб.</span>
             </div>
           </li>
           <li>
@@ -215,7 +215,7 @@
             </div>
             <div class="catalog-list-text">
               <a class="catalog-text" href="#">Непотопляемая селфи-палка</a>
-              <b class="catalog-cost">2500 руб.</b>
+              <span class="catalog-cost">2500 руб.</span>
             </div>
           </li>
           <li>
@@ -228,7 +228,7 @@
             </div>
             <div class="catalog-list-text">
               <a class="catalog-text" href="#">Селфи-палка "Следуй за мной"</a>
-              <b class="catalog-cost">4900 руб.</b>
+              <span class="catalog-cost">4900 руб.</span>
             </div>
           </li>
         </ul>
@@ -260,35 +260,39 @@
 <footer class="footer">
   <div class="container-center">
    <section class="footer-firts-colums">
-     <a class="footer-button-DEVICE"  href="#">
-       DEVICE
-     </a>
+     <a class="footer-button-DEVICE"  href="Main.html">DEVICE</a>
      <nav>
-      <ul class="footer-navigation-user navigation-transparent">
-       <li>
-         <a href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
-           Максим Кононихин
-          </a>
-        </li>
-       <li><a href="#">Выйти</a></li>
-       <li>
-         <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>
-           Сравнить
-          </a>
-        </li>
-       <li>
-         <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>
-           Корзина
-          </a>
-        </li>
-      </ul>
-    </nav>
+      <ul class="footer-navigation-user js-catalog-footer">
+         <li>
+           <a href="#">
+             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
+             Войти
+           </a>
+         </li>
+         <li class="visually-hidden">
+           <a href="#">
+             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
+             Максим Кононихин
+           </a>
+         </li>
+         <li class="visually-hidden navigation-user-exit"><a href="#">Выйти</a></li>
+         <li>
+           <a href="#">
+             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>
+             Сравнить
+           </a>
+         </li>
+         <li>
+           <a href="#">
+             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>
+             Корзина
+           </a>
+         </li>
+       </ul>
+     </nav>
    </section>
    <section class="footer-second-colums">
-     <b class="footer-text">г. Москва, ул. Строителей, 15</b>
+     <span class="footer-text">г. Москва, ул. Строителей, 15</span>
      <nav>
        <ul class="footer-navigation-delivery">
          <li><a href="#">Доставка</a></li>
@@ -296,7 +300,7 @@
          <li><a href="#">Контакты</a></li>
        </ul>
      </nav>
-     <b class="footer-contacts">Тел.: +7 (495) 495-95-95</b>
+     <span class="footer-contacts">Тел.: +7 (495) 495-95-95</span>
    </section>
    <section class="footer-third-colums">
      <ul class="footer-navigation-social">
@@ -323,4 +327,5 @@
   </div>
  </footer>
 
+ <script src="js\js.js"></script>
 </html>
